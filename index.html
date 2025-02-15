@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDAWARD SHIVITI Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text"> <span>EDWARD SHIVITI</span></div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="images/photo.jpeg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Software Developer/ Web Developer/ UX Designer</span></h5>
+                    <h1>EDWARD SHIVITI</h1>
+                    <p> Information Technology graduate with expertise in Web Development, Programming, and 
+System Software. Gained practical experience through hands on projects, including AI 
+Automation, developing and software debugging, and creating websites, through 
+collaboration with MB Gurus, have skills in configuring computer network, troubleshooting
+and problem-solving. Passionate in applying technical knowledge, creativity, with a proactive 
+mindset to contribute effectively to an IT role.
+
+                    </p>
+                    <div class="btn-group">
+                       <a href="docs/EDT SHIVITI RESUME.pdf" download class="btn btn= =Download">Download CV</a>
+                       <a href="#" class="btn">Contact</a>
+                    </div>
+
+                 </div>
+                 
+            </div>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/Mahumanie45"target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/edward-shiviti-863038299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://wa.me/27727590993"target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /* creating button click show hide navbar */
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Software Developer","Web Developer","UX Designer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+
+</body>
+</html>
